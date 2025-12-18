@@ -1,6 +1,7 @@
 import java.util.*;
 public class UniqueOccurrence {
     public static boolean uniqueOccurrence(int arr[]){
+        // Initialize new Map
         Map<Integer,Integer> map = new HashMap<>();
         for(int num : arr){
             map.put(num,map.getOrDefault(num,0)+1);
